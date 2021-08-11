@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.meera.db.model.BankOrganization">
+		<field name="bankOrganizationId" type="long" />
+		<field name="name" type="String" />
+		<field name="BIK" type="String" />
+		<field name="adress" type="String" />
+	</model>
+	<model name="com.meera.db.model.Employee">
+		<field name="employeeId" type="long" />
+		<field name="surname" type="String" />
+		<field name="name" type="String" />
+		<field name="patronymic" type="String" />
+		<field name="employeeGender" type="String" />
+		<field name="dateOfBirth" type="Date" />
+		<field name="employeePosition" type="String" />
+		<field name="employeeSalary" type="int" />
+		<field name="employeeWorkPhoneNumber" type="String" />
+		<field name="employeeMobilePhoneNumber" type="String" />
+		<field name="bankOrganization" type="String" />
+		<field name="archiveStatus" type="String" />
+	</model>
+	<model name="com.meera.db.model.JobDirectory">
+		<field name="jobDirectoryId" type="long" />
+		<field name="name" type="String" />
+		<field name="archiveStatus" type="String" />
+	</model>
+</model-hints>

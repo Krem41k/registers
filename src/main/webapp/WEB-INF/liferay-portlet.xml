@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE liferay-portlet-app PUBLIC "-//Liferay//DTD Portlet Application 6.2.0//EN" "http://www.liferay.com/dtd/liferay-portlet-app_6_2_0.dtd">
+
+<liferay-portlet-app>
+	<portlet>
+		<portlet-name>daniil</portlet-name>
+		<header-portlet-css>/css/main.css</header-portlet-css>
+		<header-portlet-css>/css/base.css</header-portlet-css>
+	</portlet>
+	<portlet>
+		<portlet-name>BankOrganization</portlet-name>
+		<header-portlet-css>/css/main.css</header-portlet-css>
+		<header-portlet-css>/css/base.css</header-portlet-css>
+	</portlet>
+</liferay-portlet-app>

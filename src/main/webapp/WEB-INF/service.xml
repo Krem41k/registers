@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN"
+        "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+<service-builder package-path="com.meera.db">
+    <author>LiferaySavvy</author>
+    <namespace>Employees</namespace>
+    <entity name="Employee" local-service="true" remote-service="false">
+        <!-- PK fields -->
+        <column name="employeeId" type="long" primary="true" />
+        <column name="surname" type="String" />
+        <column name="name" type="String" />
+        <column name="patronymic" type="String" />
+        <column name="employeeGender" type="String" />
+        <column name="dateOfBirth" type="Date" />
+        <column name="employeePosition" type="String" />
+<!--        <column name="dateOfEmployment" type="Date" />-->
+        <column name="employeeSalary" type="int" />
+        <column name="employeeWorkPhoneNumber" type="String" />
+        <column name="employeeMobilePhoneNumber" type="String" />
+        <column name="bankOrganization" type="String" />
+        <column name="archiveStatus" type="String" />
+        <!-- Order -->
+        <order by="asc">
+            <order-column name="employeeId" />
+        </order>
+        <!-- Finder methods -->
+        <finder name="byGender" return-type="Collection">
+            <finder-column name="employeeGender"/>
+        </finder>
+    </entity>
+    <entity name="BankOrganization" local-service="true" remote-service="false">
+        <!-- PK fields -->
+        <column name="bankOrganizationId" type="long" primary="true" />
+        <column name="name" type="String" />
+        <column name="BIK" type="String" />
+        <column name="adress" type="String" />
+
+        <order by="asc">
+            <order-column name="bankOrganizationId" />
+        </order>
+
+    </entity>
+    <entity name="JobDirectory" local-service="true" remote-service="false">
+        <!-- PK fields -->
+        <column name="jobDirectoryId" type="long" primary="true" />
+        <column name="name" type="String" />
+        <column name="archiveStatus" type="String" />
+
+        <order by="asc">
+            <order-column name="jobDirectoryId" />
+        </order>
+
+    </entity>
+</service-builder>

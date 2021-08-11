@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd">
+	<persistence-unit-metadata>
+		<xml-mapping-metadata-complete/>
+		<persistence-unit-defaults>
+			<access>PROPERTY</access>
+		</persistence-unit-defaults>
+	</persistence-unit-metadata>
+	<mapped-superclass class="com.meera.db.model.impl.BankOrganizationModelImpl">
+		<attributes>
+			<id name="bankOrganizationId" />
+			<basic name="name" />
+			<basic name="BIK" />
+			<basic name="adress" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.meera.db.model.impl.EmployeeModelImpl">
+		<attributes>
+			<id name="employeeId" />
+			<basic name="surname" />
+			<basic name="name" />
+			<basic name="patronymic" />
+			<basic name="employeeGender" />
+			<basic name="dateOfBirth">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="employeePosition" />
+			<basic name="employeeSalary" />
+			<basic name="employeeWorkPhoneNumber" />
+			<basic name="employeeMobilePhoneNumber" />
+			<basic name="bankOrganization" />
+			<basic name="archiveStatus" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.meera.db.model.impl.JobDirectoryModelImpl">
+		<attributes>
+			<id name="jobDirectoryId" />
+			<basic name="name" />
+			<basic name="archiveStatus" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<entity class="com.meera.db.model.impl.BankOrganizationImpl" name="BankOrganization">
+		<table name="Employees_BankOrganization" />
+		<attributes />
+	</entity>
+	<entity class="com.meera.db.model.impl.EmployeeImpl" name="Employee">
+		<table name="Employees_Employee" />
+		<attributes />
+	</entity>
+	<entity class="com.meera.db.model.impl.JobDirectoryImpl" name="JobDirectory">
+		<table name="Employees_JobDirectory" />
+		<attributes />
+	</entity>
+</entity-mappings>

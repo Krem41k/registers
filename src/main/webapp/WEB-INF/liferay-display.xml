@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE display PUBLIC "-//Liferay//DTD Display 6.2.0//EN" "http://www.liferay.com/dtd/liferay-display_6_2_0.dtd">
+
+<display>
+	<category name="category.sample2">
+		<portlet id="daniil" />
+
+	</category>
+	<category name="category.sample3">
+		<portlet id="bankOrganization" />
+	</category>
+	<category name="category.sample4">
+		<portlet id="jobDirectory" />
+	</category>
+</display>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="com.meera.db.service.BankOrganizationLocalService" class="com.meera.db.service.impl.BankOrganizationLocalServiceImpl" />
+	<bean id="com.meera.db.service.persistence.BankOrganizationPersistence" class="com.meera.db.service.persistence.BankOrganizationPersistenceImpl" parent="basePersistence" />
+	<bean id="com.meera.db.service.EmployeeLocalService" class="com.meera.db.service.impl.EmployeeLocalServiceImpl" />
+	<bean id="com.meera.db.service.persistence.EmployeePersistence" class="com.meera.db.service.persistence.EmployeePersistenceImpl" parent="basePersistence" />
+	<bean id="com.meera.db.service.JobDirectoryLocalService" class="com.meera.db.service.impl.JobDirectoryLocalServiceImpl" />
+	<bean id="com.meera.db.service.persistence.JobDirectoryPersistence" class="com.meera.db.service.persistence.JobDirectoryPersistenceImpl" parent="basePersistence" />
+</beans>
